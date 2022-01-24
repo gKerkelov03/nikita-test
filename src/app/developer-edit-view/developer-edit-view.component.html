@@ -1,0 +1,8 @@
+<div *ngIf="shouldDisplayAsNotFound">
+    <img src=".././assets/not-found-image.jpg" alt="image not found">
+</div>
+
+<app-form-view *ngIf="!shouldDisplayAsNotFound" [scheme]="currentDeveloper" [handleSubmit]="handleSubmit" [submitButtonValue]=submitButtonValue></app-form-view>
+
+
+  

@@ -1,0 +1,30 @@
+<div *ngIf="allDevelopers.length !== 0">
+    <div id="search-bars" > 
+        <div id="selected-count"> 
+            <p>Selected: {{selectedCount}}</p>       
+        </div>
+        <app-search-by-name></app-search-by-name>
+        <app-search-by-technology></app-search-by-technology>
+    </div>
+
+    <div id="hire-container">
+        <h3>Don't forget to select the developers you want to hire when you click the star in the top right corner of each developer profile</h3>
+        <p>click here to hire the developers you've selected: <app-search-by-date></app-search-by-date></p>
+        <p>you can hire more than one at the same time (as a team)</p>    
+    </div>
+
+    <h2 id="title">Developers List</h2>
+</div>
+
+<p *ngIf="allDevelopers.length === 0">It looks like we don't have any developers :( don't worry you can add some from the create button above!</p>
+
+<div *ngFor="let developer of allDevelopers ">    
+    <app-developer-hire-view 
+        [developer]="developer"
+        [isSelected]="isSelected(developer)"
+        (notifyDeleteClicked)="deleteDeveloper($event)"
+        (notifyEditClicked)="editDeveloper($event)"
+        (notifyStarClicked)="starClicked($event)"
+        >
+    </app-developer-hire-view>
+</div>

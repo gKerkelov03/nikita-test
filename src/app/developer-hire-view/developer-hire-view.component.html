@@ -1,0 +1,25 @@
+<div id="container">
+    <div id="inner-container">                
+        <img *ngIf="developer.profilePictureURL" src="{{developer.profilePictureURL}}" alt="wrong url">
+
+        <h3 id="name">
+            {{developer.name}}
+        </h3>              
+        <div id="icons-container">
+            <i class="fa fa-bitbucket" id="delete" (click)="delClicked()"></i>
+            <i class="fa fa-cog fa-spin" id="edit" (click)="editClicked()"></i>    
+            <i *ngIf="!isSelected" class="fa fa-star-o" id="not-selected-star" (click)="starClicked()"></i>
+            <i *ngIf="isSelected" class="fa fa-star" id="selected-star" (click)="starClicked()"></i>
+        </div>
+    </div>
+    <p *ngIf="developer.description"><span>Description:</span> {{developer.description}}</p>
+
+    <p><span>Technologies</span>: {{developer.technologies.join(" ")}}</p>
+    <p><span>Years of experience:</span> {{developer.yearsOfExperience}}</p>
+    <p><span>Email:</span> {{developer.email}}</p>
+    <p><span>Phone number</span>: {{developer.phoneNumber}}</p>
+    <p><span>Price per hour:</span> {{developer.pricePerHour}}</p>
+    <p><span>Location:</span> {{developer.location}}</p>
+    <p><span>Native Language:</span> {{developer.nativeLanguage}}</p>
+    <p *ngIf="developer.linkedinProfileLink"><span>Linkedin:</span> {{developer.linkedinProfileLink}}</p>    
+</div>

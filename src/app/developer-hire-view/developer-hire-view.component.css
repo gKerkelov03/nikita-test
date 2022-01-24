@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+i {
+    color: rgb(72, 168, 237);
+    font-size: 35px;     
+    box-sizing: content-box; 
+    line-height: 45px;
+    text-align: center; 
+    width: 45px; 
+    height: 45px; 
+    display: inline-block; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    background-color: rgb(224, 231, 237);
+    margin-left: 10px; 
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+#icons-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#container{
+    background-color: rgba(107, 117, 117,0.5);
+    width:50%;
+    margin:auto;
+    margin-bottom:40px;
+    border:3px solid darkblue;
+}
+
+#inner-container{
+    text-align: center;
+    background-color: rgba(116, 255, 255, 0.4);
+    position:relative;
+}
+
+#name{    
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+    color:white;
+    margin-top:0;  
+}
+
+p {
+    word-wrap: break-word;
+    font-size: large;
+}
+
+img {
+    width:200px;
+    max-width: 100%;
+    height: auto;  
+    border-radius: 15%; 
+    margin-top:10px; 
+}
+
+span{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: large;
+    color:white;
+}
+
+@media screen and (max-width: 800px) {
+    #icons-container {
+      position:static;
+    }
+  }

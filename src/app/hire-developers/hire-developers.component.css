@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:ital,wght@1,100&display=swap');
+
+#title, p {
+    text-align: center; 
+    font-family: 'Luxurious Roman', cursive;
+    color:white;
+    letter-spacing: 3px;      
+}
+
+#search-bars {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+#hire-container{
+    background-color: rgba(100, 96, 110, 0.7);
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 50px auto;
+}
+
+#search-img{
+    width: 3%;
+    height: auto;
+}
+
+#selected-count{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 101;
+}
+
+@media screen and(max-width:800px){
+    #selected-count{
+        position:static;        
+    }
+}

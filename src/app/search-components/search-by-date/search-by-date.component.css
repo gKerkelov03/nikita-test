@@ -1,0 +1,14 @@
+@import "https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css";
+
+input {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 2px solid rgb(0, 173, 253);
+    margin:5px;
+    color: rgb(88, 86, 86);    
+    outline:none;    
+} 
+

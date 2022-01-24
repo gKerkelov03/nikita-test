@@ -1,0 +1,24 @@
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 4px solid darkblue;
+    margin:30px 10px 0px 0px;
+    height: 40px;
+    color: rgb(88, 86, 86);   
+    outline:none;    
+
+    background-image: url("../../../assets/search.png");
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: 98% 98%; 
+} 
+
+@media screen and (max-width: 700px) {
+    input{
+        display: block;
+        width: 100%;
+    }
+}
